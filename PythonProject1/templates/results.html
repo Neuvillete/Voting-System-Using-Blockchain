@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Election Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Current Election Results</h1>
+        <div id="resultsContainer">
+            {% for party, votes in results.items() %}
+            <div class="result-item">
+                <span>{{ party }}</span>
+                <strong>{{ votes }} votes</strong>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

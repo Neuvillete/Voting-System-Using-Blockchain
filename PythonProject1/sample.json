@@ -1,0 +1,77 @@
+{
+    "successful_votes": [
+        {
+            "voter_id": "MH2024001",
+            "party": "Bharatiya Janata Party (BJP)",
+            "voter_details": {
+                "name": "Rahul Sharma",
+                "age": 35,
+                "constituency": "Mumbai North",
+                "state": "Maharashtra"
+            }
+        },
+        {
+            "voter_id": "DL2024002",
+            "party": "Indian National Congress (INC)",
+            "voter_details": {
+                "name": "Priya Gupta",
+                "age": 42,
+                "constituency": "Delhi Central",
+                "state": "Delhi"
+            }
+        },
+        {
+            "voter_id": "KA2024003",
+            "party": "Aam Aadmi Party (AAP)",
+            "voter_details": {
+                "name": "Anil Kumar",
+                "age": 55,
+                "constituency": "Bangalore South",
+                "state": "Karnataka"
+            }
+        },
+        {
+            "voter_id": "WB2024004",
+            "party": "Trinamool Congress (TMC)",
+            "voter_details": {
+                "name": "Mamata Banerjee",
+                "age": 68,
+                "constituency": "Kolkata Ballygunge",
+                "state": "West Bengal"
+            }
+        },
+        {
+            "voter_id": "UP2024005",
+            "party": "Bahujan Samaj Party (BSP)",
+            "voter_details": {
+                "name": "Mayawati",
+                "age": 71,
+                "constituency": "Lucknow",
+                "state": "Uttar Pradesh"
+            }
+        }
+    ],
+    "voter_id_generation_rules": {
+        "format": "SS-YYYY-NNN",
+        "components": {
+            "SS": "Two-letter state code",
+            "YYYY": "Current year",
+            "NNN": "Sequential voter number"
+        },
+        "examples": [
+            "MH2024001 (Maharashtra, 2024, Voter 1)",
+            "DL2024002 (Delhi, 2024, Voter 2)"
+        ]
+    },
+    "validation_checks": {
+        "voter_id_length": 10,
+        "allowed_states": [
+            "Maharashtra", "Delhi", "Karnataka",
+            "West Bengal", "Uttar Pradesh"
+        ],
+        "age_restrictions": {
+            "min_voting_age": 18,
+            "max_voting_age": 100
+        }
+    }
+}

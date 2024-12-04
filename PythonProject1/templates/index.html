@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockchain Voting System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Voting System</h1>
+
+        <input
+            type="text"
+            id="voterId"
+            placeholder="Enter Voter ID"
+        >
+
+        <select id="partySelect">
+            <option value="">Select Political Party</option>
+            <option>Bharatiya Janata Party (BJP)</option>
+            <option>Indian National Congress (INC)</option>
+            <option>Aam Aadmi Party (AAP)</option>
+            <option>Trinamool Congress (TMC)</option>
+            <option>Bahujan Samaj Party (BSP)</option>
+            <option>Samajwadi Party (SP)</option>
+            <option>Communist Party of India (Marxist) [CPI(M)]</option>
+            <option>Nationalist Congress Party (NCP)</option>
+        </select>
+
+        <button onclick="castVote()">Cast Vote</button>
+
+        <div id="message"></div>
+
+        <div id="results">
+            <h2>Election Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
